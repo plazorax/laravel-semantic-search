@@ -1,0 +1,13 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    level: 8
+    paths:
+        - src
+        - database
+        - tests/Fixtures
+    tmpDir: build/phpstan
+    # Public methods re-check their PHPDoc types at runtime for callers
+    # that do not run static analysis.
+    treatPhpDocTypesAsCertain: false

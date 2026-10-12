@@ -1,0 +1,64 @@
+{
+    "name": "plazorax/laravel-semantic-search",
+    "description": "Semantic search over Eloquent models with chunk-level citations, backed by pgvector or an in-memory store.",
+    "keywords": ["laravel", "eloquent", "semantic-search", "embeddings", "pgvector", "rag"],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Oleksii Shaposhnikov",
+            "homepage": "https://github.com/plazorax"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/bus": "^11.0|^12.0",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/contracts": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/queue": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.8",
+        "larastan/larastan": "^3.0",
+        "laravel/pint": "^1.18",
+        "orchestra/testbench": "^9.9|^10.0",
+        "pestphp/pest": "^3.8|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Plazorax\\SemanticSearch\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Plazorax\\SemanticSearch\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "analyse": "phpstan analyse --memory-limit=1G",
+        "lint": "pint --test",
+        "format": "pint"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Plazorax\\SemanticSearch\\SemanticSearchServiceProvider"
+            ],
+            "aliases": {
+                "SemanticSearch": "Plazorax\\SemanticSearch\\Facades\\SemanticSearch"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
