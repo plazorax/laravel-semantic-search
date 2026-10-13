@@ -1,4 +1,4 @@
-# laravel-semantic-search
+# Laravel Semantic Search
 
 ![CI](https://github.com/plazorax/laravel-semantic-search/actions/workflows/ci.yml/badge.svg)
 
