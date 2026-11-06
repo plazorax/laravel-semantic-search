@@ -39,7 +39,7 @@
     },
     "scripts": {
         "test": "pest",
-        "analyse": "phpstan analyse --memory-limit=1G",
+        "analyze": "phpstan analyse --memory-limit=1G",
         "lint": "pint --test",
         "format": "pint"
     },

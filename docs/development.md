@@ -3,7 +3,7 @@
 ```bash
 composer install
 composer test      # Pest (pgvector tests are skipped without PostgreSQL)
-composer analyse   # Larastan, level 8
+composer analyze   # Larastan, level 8
 composer lint      # Pint --test
 composer format    # Pint, fixes in place
 ```

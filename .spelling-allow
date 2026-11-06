@@ -1,0 +1,3 @@
+# PHPStan names its command analyse.
+phpstan analyse
+'analyse

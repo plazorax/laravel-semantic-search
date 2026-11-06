@@ -107,7 +107,7 @@ it('exposes search helpers on the model through the trait', function () {
     expect($this->account->semanticIndex())->toBeGreaterThan(0);
 });
 
-it('serialises results to arrays', function () {
+it('serializes results to arrays', function () {
     $array = SemanticSearch::for(Article::class)->query('returns')->limit(1)->get()->first()->toArray();
 
     expect($array)->toHaveKeys(['model_type', 'model_id', 'score', 'citation'])

@@ -7,7 +7,7 @@ Semantic (embedding-based) search over Eloquent models for Laravel 11 and 12. Ev
 ## Why
 
 - Keyword search misses matches that use different words for the same thing ("refund" vs "money back"). Embeddings catch them.
-- RAG features and help-centre search need to show where an answer came from, not only which record matched.
+- RAG features and help-center search need to show where an answer came from, not only which record matched.
 - The moving parts are small contracts (`Embedder`, `VectorStore`) that you can swap or replace.
 
 ## Install

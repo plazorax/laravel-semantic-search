@@ -12,7 +12,7 @@ use Plazorax\SemanticSearch\Support\Vector;
  * Deterministic, offline embedder for tests and local development.
  *
  * Uses feature hashing over lower-cased word tokens: each token adds +1 or -1
- * to one bucket chosen by its hash, and the result is normalised to unit
+ * to one bucket chosen by its hash, and the result is normalized to unit
  * length. Texts that share words therefore score higher than texts that do
  * not, which is enough to test ranking without a network call. It does not
  * capture meaning (synonyms score zero).
